@@ -1,20 +1,7 @@
-/* 
-PSEUDOCODE:
-
-this is meant to be a global NPM package. The readme will be created in cwd
-
-1. check to see if there is a README.md file in the directory.
-2. if not we will create one but if there is the user can either rename existing file or rename the generated file
-
-
-*/
-
 const figlet = require('figlet');
 const colors = require('colors');
 const fs = require('fs');
-// const { resolve } = require('path');
-const { createREADME } = require('./generate');
-const generate = require('./generate');
+const { getAnswers } = require('./generate');
 const processInput = require('./process')
 const templatetize = require('./MDTemplate')
 const writeToFile = require('./writeFile')
@@ -62,13 +49,15 @@ async function init() {
     await createTitle('README Generator!');
     let doesExist = await getFileInfo();
     console.log("\n\n\nLet's begin!\n\n\n");
-    let userInput = await createREADME(doesExist);
+    let userInput = await getAnswers(doesExist);
     let result = await processInput(userInput);
     let finalText = await templatetize(result)
     await writeToFile(finalText, result.filename).then(response => {
         console.log(response)
+        if (response === 'Success!') {
+            console.log(result.filename + " was created. You're all set!")
+        }
     })
-    // console.log(finalText)
 
 }
 

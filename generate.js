@@ -61,9 +61,8 @@ const promptOverwrite = () => {
 
 
 
-//TODO will need table of contents in md
 
-function createREADME(doesExist) {
+function getAnswers(doesExist) {
   return new Promise((resolve, reject) => {
     inq
       .prompt(questions)
@@ -86,4 +85,4 @@ function createREADME(doesExist) {
   });
 };
 
-module.exports = { createREADME };
+module.exports = { getAnswers };

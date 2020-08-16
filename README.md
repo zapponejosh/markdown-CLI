@@ -21,20 +21,14 @@ node,inquirerjs
 
 ![screenshot](img/img1.png)
 
-## Deployment
-**[Find this project deployed here](josh.com)**
 
 ## Installation and Usage
 
 ```npm install```
 
-```npm run```
+```npm start```
 
-## Testing
-
-```TODO create Jest tests```
-
-## Contributors and Contact
+## Contact
 
 
 **Email questions: [zappone.josh@gmail.com](mailto:zappone.josh@gmail.com)**
