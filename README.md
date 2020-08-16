@@ -20,6 +20,9 @@ node,inquirerjs
 ## Preview
 
 ![screenshot](img/img1.png)
+![demo](img/demo.gif)
+
+[Link to demo video](https://drive.google.com/file/d/11TFoI66b6Wxb3a_ZAfZQGTTrS4zD5iqi/view?usp=sharing)
 
 
 ## Installation and Usage
