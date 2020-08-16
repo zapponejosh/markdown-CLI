@@ -31,7 +31,7 @@ const questions = [
     {
       type: 'input',
       name: 'stack',
-      message: "What tech stack did you use?",
+      message: "What tech stack did you use? (spearated by a comma)",
       default: "Rock, Paper, Scissors"
     },
     // deployment URL

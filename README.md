@@ -12,7 +12,8 @@ A Node based readme generator to easily create a readme.md file for your next pr
 
 
 ## Tech Stack
-node,inquirerjs
+* Node
+* Inquirerjs
 
 
 ## Preview
