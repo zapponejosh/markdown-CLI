@@ -4,10 +4,8 @@
 
 * [Tech stack](#tech-stack)
 * [Preview](#preview)
-* [Deployment](#deployment)
 * [Installation and Usage](#installation-and-usage)
-* [Testing](#testing)
-* [Contributors and Contact](#contributors-and-contact)
+* [Contact](#contributors-and-contact)
 * [License](#license)
 
 A Node based readme generator to easily create a readme.md file for your next project!
