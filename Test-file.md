@@ -1,4 +1,4 @@
-# README Generator CLI
+# Title TBD
 
 ### Table of contents
 
@@ -10,7 +10,7 @@
 * [Contributors and Contact](#contributors-and-contact)
 * [License](#license)
 
-A Node based readme generator to easily create a readme.md file for your next project!
+A node CLI to generate readmes
 
 
 ## Tech Stack
@@ -32,11 +32,11 @@ node,inquirerjs
 
 ## Testing
 
-```TODO create Jest tests```
+```TODO add tests```
 
 ## Contributors and Contact
 
-
+josh,jimmy,gigi,rylie,tex
 **Email questions: [zappone.josh@gmail.com](mailto:zappone.josh@gmail.com)**
 
 ### License

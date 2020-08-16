@@ -14,9 +14,12 @@ const colors = require('colors');
 const fs = require('fs');
 // const { resolve } = require('path');
 const { createREADME } = require('./generate');
-const { fileToWrite } = require('./generate');
 const generate = require('./generate');
+const processInput = require('./process')
+const templatetize = require('./MDTemplate')
+const writeToFile = require('./writeFile')
 
+// is there an existing readme file?
 function getFileInfo() {
     return new Promise ((resolve, reject) => {
         fs.access('README.md', fs.constants.F_OK, (err) => {
@@ -54,17 +57,20 @@ function createTitle(text) {
     })
 }
 
-function generateText(ans) {
-    console.log("here")
-}
 
 async function init() {
     await createTitle('README Generator!');
     let doesExist = await getFileInfo();
-    console.log("\n\n\nLet's begin!\n\n\n")
-    await createREADME(doesExist);
-    console.log(fileToWrite)
+    console.log("\n\n\nLet's begin!\n\n\n");
+    let userInput = await createREADME(doesExist);
+    let result = await processInput(userInput);
+    let finalText = await templatetize(result)
+    await writeToFile(finalText, result.filename).then(response => {
+        console.log(response)
+    })
+    // console.log(finalText)
 
 }
 
 init()
+
