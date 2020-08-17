@@ -4,10 +4,8 @@
 
 * [Tech stack](#tech-stack)
 * [Preview](#preview)
-* [Deployment](#deployment)
 * [Installation and Usage](#installation-and-usage)
-* [Testing](#testing)
-* [Contributors and Contact](#contributors-and-contact)
+* [Contributors and Contact](#contact)
 * [License](#license)
 
 This is ademo of the working app
