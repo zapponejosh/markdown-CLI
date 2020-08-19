@@ -2,8 +2,7 @@ const inq = require("inquirer");
 const fs = require("fs");
 const { questions } = require("./questions");
 
-let year = 2020;
-let fullname = "Josh";
+
 let fileToWrite = "README.md";
 
 
@@ -31,6 +30,7 @@ const promptOverwrite = () => {
               type: "input",
               name: "newFilename",
               message: "Enter an alternate filename...",
+              default: "README2.md"
             },
           ])
           .then(function (response) {
