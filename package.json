@@ -5,14 +5,14 @@
   "main": "markdown.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node markdown.js"
+    "start": "node main.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zapponejosh/markdown-CLI.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/zapponejosh/markdown-CLI/issues"
   },

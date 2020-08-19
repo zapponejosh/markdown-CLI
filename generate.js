@@ -1,7 +1,6 @@
 const inq = require("inquirer");
 const fs = require("fs");
 const { questions } = require("./questions");
-const { resolve } = require("path");
 
 let year = 2020;
 let fullname = "Josh";
